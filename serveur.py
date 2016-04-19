@@ -7,7 +7,7 @@ def check_login(username, password):
 @get('/')
 def login():
     return '''
-        <body style="text-align : center;  font-family : Arial; background-color : #D3FEE4">
+        <body style="text-align : center;  font-family : Noto Sans; background-color : #D3FEE4">
             <h1> Bienvenue </h1>
             <form action="" method="post">
                 Username: <input name="username" type="text">
@@ -30,7 +30,7 @@ def do_login():
 @get('/index')
 def index():
     return '''
-        <body style="text-align : center; font-family : Arial; background-color : #D3FEE4">
+        <body style="text-align : center; font-family : Noto Sans; background-color : #D3FEE4">
             <h1> Effectuez votre recherche </h1>
             <form action="/index" method="post">
                 <table style="width : 40%; margin-left : 30%">
@@ -59,7 +59,7 @@ def do_index():
     equipement = request.forms.get('equipement')
     installation = request.forms.get('installation')
     if check_search(activite, equipement, installation):
-        return "<p>Vous voulez faire du "+activite+" au "+equipement+" situé vers "+installation+".</p>"
+        return "<body style=\'text-align : center; font-family : Noto Sans; background-color : #D3FEE4\'><p>Vous voulez faire du "+activite+" au "+equipement+" situé vers "+installation+".</p></body>"
     else:
         return "<p>Il manque des informations.</p>"
 
