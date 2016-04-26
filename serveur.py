@@ -1,4 +1,5 @@
 from libs.bottle import route, template, get, post, request, run
+import sqlite3
 
 
 
@@ -21,15 +22,20 @@ def do_login():
 
 @get('/index')
 def index():
-    return template('tpl/index', activite='test')
+    conn = sqlite3.connect('base.db')
+    cursor = conn.cursor()
+    equipement = []
+    for row in cursor.execute("""select nom from equipement group by nom"""):
+        equipement.append(row)
+    return template('tpl/index', equipement=equipement)
 
 def check_search(activite, equipement, installation):
     return activite != "" and equipement != "" and installation != ""
 
 @post('/index')
 def do_index():
-    activite = request.forms.get('activite')
     equipement = request.forms.get('equipement')
+    activite = request.forms.get('activite')
     installation = request.forms.get('installation')
     if check_search(activite, equipement, installation):
         return template('tpl/result', activite=activite, equipement=equipement, installation=installation)
