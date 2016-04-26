@@ -1,0 +1,9 @@
+Tuto GitHub :
+
+	1) git pull -> Récupérer les fichiers sur gitHub (optionnel)
+
+	2) git add * -> Ajouter les modifications et ajouts
+
+	3) git commit -m "date heure (nom)" -> Effectuer le commit
+
+	4) git push -> Mettre à jour les fichiers sur gitHub
