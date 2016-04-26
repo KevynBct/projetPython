@@ -25,9 +25,15 @@ def index():
     conn = sqlite3.connect('base.db')
     cursor = conn.cursor()
     equipement = []
+    activite = []
+    installation = []
     for row in cursor.execute("""select nom from equipement group by nom"""):
         equipement.append(row)
-    return template('tpl/index', equipement=equipement)
+    for row in cursor.execute("""select nom from activite group by nom"""):
+        activite.append(row)
+    for row in cursor.execute("""select nom from installation group by nom"""):
+        installation.append(row)
+    return template('tpl/index', equipement=equipement, activite=activite, installation=installation)
 
 def check_search(activite, equipement, installation):
     return activite != "" and equipement != "" and installation != ""

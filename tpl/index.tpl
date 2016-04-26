@@ -45,19 +45,23 @@
                 <tr>
                     <td>
                         <select id="activite" name="activite">
-                            
+                            % for nom in activite:
+                                <option value="{{nom[0]}}">{{nom[0]}}
+                            %end 
                         </select>
                     </td>
                     <td>
                         <select id="equipement" name="equipement" >
-                           % for nom in equipement:
+                            % for nom in equipement:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
                         </select>
                     </td>
                     <td>
                         <select id="installation" name="installation">
-                            
+                            % for nom in installation:
+                                <option value="{{nom[0]}}">{{nom[0]}}
+                            %end 
                         </select>
                     </td>
                 </tr>
