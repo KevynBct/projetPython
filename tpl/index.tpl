@@ -13,10 +13,17 @@
         }
 
         table {
-            width : 60%;
-            margin-left : 20%;
+            width : 70%;
+            margin-left : 15%;
         }
 
+        select {
+            width : 100%;
+        }
+
+        td {
+            width: 25%;
+        }
         .mainDiv {
             background-color: #FFF;
             text-align : center;
@@ -24,7 +31,6 @@
             margin-left: 15%;
         }
     </style>
-
 </head>
 <body>
     <div class='mainDiv'>
@@ -38,23 +44,26 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="activite">
+                        <select id="activite" name="activite">
                             
                         </select>
                     </td>
                     <td>
-                        <select name="equipement">
-                            
+                        <select id="equipement" name="equipement" >
+                           % for nom in equipement:
+                                <option value="{{nom[0]}}">{{nom[0]}}
+                            %end 
                         </select>
                     </td>
                     <td>
-                        <select name="installation">
+                        <select id="installation" name="installation">
                             
                         </select>
                     </td>
-                    <td><input value="Valider" type="submit"></td>
                 </tr>
             </table>
+            </br>
+            <input value="Valider" type="submit">
         </form>
     </div>
 </body>
