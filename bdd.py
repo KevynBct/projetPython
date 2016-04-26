@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS activite(
 conn.commit()
 
 #Insertion des données dans la table à partir du fichier equipement.csv
-with open('projetPython/csv/equipements.csv', 'r') as equip:
+with open('csv/equipements.csv', 'r') as equip:
     reader = csv.reader(equip)
 
     #Flag pour eviter la lecture de la premiere ligne 
@@ -72,8 +72,14 @@ with open('projetPython/csv/equipements.csv', 'r') as equip:
             first = False
             continue
         else:
-            print("INSERT INTO equipement(numero_equipement, nom, numero_installation) VALUES({0}, \'{1}\', \'{2}\')".format(row[4],row[5],row[2]))
-            cursor.execute("INSERT INTO equipement(numero_equipement, nom, numero_installation) VALUES({0}, \'{1}\', \'{2}\')".format(row[4],row[5],row[2]))
+            cursor.execute("INSERT INTO equipement(numero_equipement, nom, numero_installation) VALUES(?, ?, ?)", (row[4],row[5],row[2]))
+
+conn.commit()
+
+
+
+
+
 
 #Fermeture BDD
 conn.close()

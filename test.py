@@ -12,7 +12,6 @@ conn = sqlite3.connect('base.db')
 cursor = conn.cursor()
 
 for row in cursor.execute("""
-
 	select * from equipement
 	"""):
 	print(row)
