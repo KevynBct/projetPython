@@ -5,7 +5,7 @@
 	<style type="text/css">
 		body {
 			font-family : Helvetica;
-			background-color : #EBECEC;
+			background-color : #D3FEE4;
 		}
 
 		h1 {
