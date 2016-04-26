@@ -11,9 +11,6 @@ conn = sqlite3.connect('base.db')
 #Table installation
 cursor = conn.cursor()
 
-for row in cursor.execute("""
-
-	select * from equipement
-	"""):
-	print(row)
-
+for row in cursor.execute("""select * from equipement"""):
+	
+print(row)

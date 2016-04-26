@@ -1,0 +1,11 @@
+body {
+	font-family : Noto Sans;
+	background-color : #D3FEE4;
+}
+
+#mainDiv {
+	background-color: #FFF;
+	text-align : center;
+	width: 70%;
+	margin-left: 15%;
+}
