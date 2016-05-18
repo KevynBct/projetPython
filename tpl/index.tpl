@@ -41,14 +41,17 @@
             <table>
                 <tr>
                     <td>Activité</td>
-                    <!-- <td>Equipement</td> -->
                     <td>Lieu</td>
                 </tr>
                 <tr>
                     <td>
                         <select id="activite" name="activite">
+<<<<<<< HEAD
                          
                            <option value=""></option>
+=======
+                            <option value=""></option>
+>>>>>>> 1e0edc1fdefee3c02966265610c0156157724397
                             % for nom in activite:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
