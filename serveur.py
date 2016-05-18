@@ -24,28 +24,30 @@ def do_login():
 def index():
     conn = sqlite3.connect('base.db')
     cursor = conn.cursor()
-    equipement = []
     activite = []
     installation = []
-    for row in cursor.execute("""select nom from equipement group by nom"""):
-        equipement.append(row)
-    for row in cursor.execute("""select nom from activite group by nom"""):
-        activite.append(row)
-    for row in cursor.execute("""select ville from installation group by nom"""):
-        installation.append(row)
-    return template('tpl/index', equipement=equipement, activite=activite, installation=installation)
+    for row in cursor.execute("select nom from activite group by nom"):
+        if row not in activite:
+            activite.append(row)
+    for row in cursor.execute("select ville from installation group by nom"):
+        if row not in installation:
+            installation.append(row)
+    activite.sort()
+    installation.sort()
+    return template('tpl/index', activite=activite, installation=installation)
 
-def check_search(activite, equipement, installation):
-    return activite != "" and equipement != "" and installation != ""
+def check_requete(activite, installation):
+    if(activte == "" &)
 
 @post('/index')
 def do_index():
-    equipement = request.forms.get('equipement')
+    conn = sqlite3.connect('base.db')
+    cursor = conn.cursor()
+    resultat = []
     activite = request.forms.get('activite')
     installation = request.forms.get('installation')
-    if check_search(activite, equipement, installation):
-        return template('tpl/result', activite=activite, equipement=equipement, installation=installation)
-    else:
-        return "<p>Il manque des informations.</p>"
+    for row in cursor.execute("select i.adresse, i.ville, e.nom, a.nom from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where LOWER(i.ville) = LOWER(\""+installation+"\") and a.nom LIKE \"%"+activite+"%\""):
+        resultat.append(row)
+    return template('tpl/result', resultat=resultat)
 
 run(host='localhost', port=8080)

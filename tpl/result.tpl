@@ -25,7 +25,24 @@
 </head>
 <body>
 <div class='mainDiv'>
-	<p>Vous voulez faire du {{activite}} au {{equipement}} situé vers {{installation}}.</p>
+
+	
+        <table>
+        	<tr>
+        		<td>Sport</td>
+        		<td>Adresse</td>
+        		<td>Equipement</td>
+        		<td>Ville</td>
+        	</tr>
+        	% for row in resultat:
+        	<tr>
+        		<td>{{row[3]}}</td>
+        		<td>{{row[0]}}</td>
+        		<td>{{row[2]}}</td>
+        		<td>{{row[1]}}</td>
+        	</tr>
+        	%end
+        </table>
 </div>
 </body>
 </html>
