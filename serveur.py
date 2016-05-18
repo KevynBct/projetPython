@@ -20,10 +20,12 @@ def index():
     installation = []
     for row in cursor.execute("select nom from activite group by nom"):
         if row not in activite:
-            activite.append(row)
+            if(row != ""):
+                activite.append(row)
     for row in cursor.execute("select ville from installation group by nom"):
         if row not in installation:
-            installation.append(row)
+            if(row != ""):
+                installation.append(row)
     activite.sort()
     installation.sort()
     return template('tpl/index', activite=activite, installation=installation)

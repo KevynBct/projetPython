@@ -40,12 +40,9 @@
         <form action="/index" method="post">
             <table>
                 <tr>
-                    <td>Activité</td>
-                    <td>Lieu</td>
-                </tr>
-                <tr>
                     <td>
                         <select id="activite" name="activite">
+                            <option value="">Choisissez une activité</option>
                             % for nom in activite:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
@@ -53,7 +50,7 @@
                     </td>
                     <td>
                         <select id="installation" name="installation">
-                            <option value=""></option>
+                            <option value="">Choisissez un lieu</option>
                             % for nom in installation:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
