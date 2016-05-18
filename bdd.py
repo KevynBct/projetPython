@@ -4,8 +4,6 @@
 import sqlite3
 import csv
 
-
-
 #Connexion BDD
 conn = sqlite3.connect('base.db')
 
@@ -19,23 +17,22 @@ cursor.execute("DROP table equipement_activite")
 #Creation des tables
     
 #Table installation
-#cursor = conn.cursor()
 cursor.execute("""
-CREATE TABLE IF NOT EXISTS installation(
-     numero_instal INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
-     nom VARCHAR, 
-     numero INTEGER,
-     adresse VARCHAR, 
-     code_postal VARCHAR,
-     ville VARCHAR,
-     acces_pmr VARCHAR
+CREATE TABLE IF NOT EXISTS installation
+(
+    numero_instal INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
+    nom VARCHAR, 
+    numero INTEGER,
+    adresse VARCHAR, 
+    code_postal VARCHAR,
+    ville VARCHAR,
+    acces_pmr VARCHAR
 )
 """)
 conn.commit()
 
 
 #Table equipement
-#cursor = conn.cursor()
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS equipement(
      numero_equipement INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
@@ -53,13 +50,11 @@ conn.commit()
 #      numero_activite, 
 #      FOREIGN KEY(numero_equipement) REFERENCES equipement(numero_equipement),
 #      FOREIGN KEY(numero_activite) REFERENCES activite(numero_activite)
-     
 # )
 # """)
 # conn.commit()
 
 #Table activite
-#cursor = conn.cursor()
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS activite(
      id_activite INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE, 

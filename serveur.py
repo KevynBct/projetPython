@@ -1,5 +1,7 @@
-from libs.bottle import route, template, get, post, request, run
+from libs.bottle import route, template, get, post, request, run, static_file
 import sqlite3
+
+
 
 
 
@@ -31,8 +33,6 @@ def index():
         equipement.append(row)
     for row in cursor.execute("""select nom from activite group by nom"""):
         activite.append(row)
-    for row in cursor.execute("""select ville from installation group by nom"""):
-        installation.append(row)
     return template('tpl/index', equipement=equipement, activite=activite, installation=installation)
 
 def check_search(activite, equipement, installation):
@@ -47,5 +47,10 @@ def do_index():
         return template('tpl/result', activite=activite, equipement=equipement, installation=installation)
     else:
         return "<p>Il manque des informations.</p>"
+
+@route('/static/<filename>', name='static')
+def serve_static(filename):
+    return static_file(filename, root="static")
+
 
 run(host='localhost', port=8080)
