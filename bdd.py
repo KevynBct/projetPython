@@ -45,18 +45,18 @@ CREATE TABLE IF NOT EXISTS equipement(
 """)
 conn.commit()
 
-#Table equipement_activite
-#cursor = conn.cursor()
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS equipement_activite(
-     numero_equipement,
-     numero_activite, 
-     FOREIGN KEY(numero_equipement) REFERENCES equipement(numero_equipement),
-     FOREIGN KEY(numero_activite) REFERENCES activite(numero_activite)
+# #Table equipement_activite
+# #cursor = conn.cursor()
+# cursor.execute("""
+# CREATE TABLE IF NOT EXISTS equipement_activite(
+#      numero_equipement,
+#      numero_activite, 
+#      FOREIGN KEY(numero_equipement) REFERENCES equipement(numero_equipement),
+#      FOREIGN KEY(numero_activite) REFERENCES activite(numero_activite)
      
-)
-""")
-conn.commit()
+# )
+# """)
+# conn.commit()
 
 #Table activite
 #cursor = conn.cursor()

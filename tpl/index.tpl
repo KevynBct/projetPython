@@ -41,24 +41,25 @@
             <table>
                 <tr>
                     <td>Activité</td>
-                    <td>Equipement</td>
-                    <td>Installation</td>
+                    <!-- <td>Equipement</td> -->
+                    <td>Lieu</td>
                 </tr>
                 <tr>
                     <td>
                         <select id="activite" name="activite">
+                            
                             % for nom in activite:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
                         </select>
                     </td>
-                    <td>
+                   <!--  <td>
                         <select id="equipement" name="equipement" >
                             % for nom in equipement:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
                         </select>
-                    </td>
+                    </td> -->
                     <td>
                         <select id="installation" name="installation">
                             % for nom in installation:
