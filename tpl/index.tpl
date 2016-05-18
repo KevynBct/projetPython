@@ -46,7 +46,6 @@
                 <tr>
                     <td>
                         <select id="activite" name="activite">
-                            <option value=""></option>
                             % for nom in activite:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
