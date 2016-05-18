@@ -25,10 +25,12 @@
             width: 25%;
         }
         .mainDiv {
-            background-color: #FFF;
+            background-color: white;
             text-align : center;
             width: 70%;
             margin-left: 15%;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0 0 grey;
         }
     </style>
 </head>

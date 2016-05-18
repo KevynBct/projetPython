@@ -31,7 +31,7 @@ def index():
         equipement.append(row)
     for row in cursor.execute("""select nom from activite group by nom"""):
         activite.append(row)
-    for row in cursor.execute("""select nom from installation group by nom"""):
+    for row in cursor.execute("""select ville from installation group by nom"""):
         installation.append(row)
     return template('tpl/index', equipement=equipement, activite=activite, installation=installation)
 

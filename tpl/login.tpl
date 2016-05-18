@@ -7,19 +7,21 @@
 			font-family : Helvetica;
 			background-color : #D3FEE4;
 		}
-
 		h1 {
 			font-family: Impact;
-			margin-top: 5%;
+			margin-top: 25px;
 		}
 
 		.mainDiv {
-			background-color: #696969;
+			background-color: white;
 			text-align : center;
 			width: 70%;
+			height: 500px;
 			margin-left: 15%;
 			margin-top: 20px;
 			min-height: 20%;
+			border-radius: 5px;
+			box-shadow: 2px 2px 0 0 grey;
 		}
 
 		form {
