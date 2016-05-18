@@ -23,10 +23,10 @@ CREATE TABLE IF NOT EXISTS installation
     numero_instal INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
     nom VARCHAR, 
     numero INTEGER,
-    adresse VARCHAR, 
-    code_postal VARCHAR,
+    adresse VARCHAR,
     ville VARCHAR,
-    acces_pmr VARCHAR
+    lat VARCHAR,
+    long VARCHAR
 )
 """)
 conn.commit()
@@ -94,7 +94,7 @@ with open('csv/installations.csv', 'r') as instal:
             first = False
             continue
         else:
-            cursor.execute("INSERT INTO installation(numero_instal, nom, adresse, code_postal, ville, acces_pmr) VALUES (?, ?, ?, ?, ?, ?)", (row[1],row[0],row[7],row[4],row[2], row[12]))
+            cursor.execute("INSERT INTO installation(numero_instal, nom, adresse, ville, lat, long) VALUES (?, ?, ?, ?, ?, ?)", (row[1],row[0],row[7],row[2],row[9], row[10]))
 conn.commit()
 
 #Insertion data from activite.csv
