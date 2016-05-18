@@ -33,11 +33,11 @@ def index():
 def check_requete(activite, installation):
     requete = ""
     if(activite == "" and installation != ""):
-        requete = "select i.adresse, i.ville, e.nom, a.nom from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where LOWER(i.ville) = LOWER(\""+installation+"\")"
+        requete = "select i.adresse, i.ville, e.nom, a.nom, i.lat, i.long from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where LOWER(i.ville) = LOWER(\""+installation+"\")"
     elif(activite != "" and installation == ""):
-        requete = "select i.adresse, i.ville, e.nom, a.nom from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where a.nom LIKE \"%"+activite+"%\""
+        requete = "select i.adresse, i.ville, e.nom, a.nom, i.lat, i.long from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where a.nom LIKE \"%"+activite+"%\""
     elif(activite != "" and installation != ""):
-        requete = "select i.adresse, i.ville, e.nom, a.nom from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where LOWER(i.ville) = LOWER(\""+installation+"\") and a.nom LIKE \"%"+activite+"%\""
+        requete = "select i.adresse, i.ville, e.nom, a.nom, i.lat, i.long from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where LOWER(i.ville) = LOWER(\""+installation+"\") and a.nom LIKE \"%"+activite+"%\""
     return requete
 
 @post('/index')
@@ -50,9 +50,12 @@ def do_index():
         resultat.append(row)
     return template('tpl/result', resultat=resultat)
 
+@get('/map/<lat>/<long>')
+def map(lat, long):
+    return template('tpl/map', lat = lat, long = long)
+
 @route('/static/<filename>', name='static')
 def serve_static(filename):
     return static_file(filename, root="static")
-
 
 run(host='localhost', port=8080)
