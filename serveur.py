@@ -31,7 +31,7 @@ def index():
     return template('tpl/index', activite=activite, installation=installation)
 
 def check_requete(activite, installation):
-    requete = ""
+    requete = "select i.adresse, i.ville, e.nom, a.nom, i.lat, i.long from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement"
     if(activite == "" and installation != ""):
         requete = "select i.adresse, i.ville, e.nom, a.nom, i.lat, i.long from installation i join equipement e on i.numero_instal = e.numero_installation join activite a on a.numero_equipement = e.numero_equipement where LOWER(i.ville) = LOWER(\""+installation+"\")"
     elif(activite != "" and installation == ""):

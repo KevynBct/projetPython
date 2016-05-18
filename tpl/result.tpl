@@ -13,19 +13,20 @@
 		}
 
 		.mainDiv {
-			background-color: white;
-			text-align : center;
-			width: 70%;
-			margin-left: 15%;
-			border-radius: 5px;
-			box-shadow: 2px 2px 0 0 grey;
+            background-color: white;
+            width: 70%;
+            height: 400px;
+            margin-left: 15%;
+            margin-top: 80px;
+            min-height: 20%;
+            border-radius: 5px;
+            box-shadow: 2px 2px 0 0 grey;
 		}
 	</style>
 
 </head>
 <body>
 <div class='mainDiv'>
-
 	
         <table>
         	<tr>
