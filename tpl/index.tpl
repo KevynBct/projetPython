@@ -47,7 +47,11 @@
                 <tr>
                     <td>
                         <select id="activite" name="activite">
+<<<<<<< HEAD
                             
+=======
+                            <option value=""></option>
+>>>>>>> 4067dd933bb2ad82c72586974878f79d2f6e984f
                             % for nom in activite:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
@@ -55,6 +59,7 @@
                     </td>
                    <!--  <td>
                         <select id="equipement" name="equipement" >
+                            <option value=""></option>
                             % for nom in equipement:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
@@ -62,6 +67,7 @@
                     </td> -->
                     <td>
                         <select id="installation" name="installation">
+                            <option value=""></option>
                             % for nom in installation:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 

@@ -8,13 +8,16 @@
 			background-color : #D3FEE4;
 		}
 		h1 {
+			position:relative;
+			top:20px;
+			left: 25%;
+			width: 50%;
+			text-align: center;
 			font-family: Impact;
-			margin-top: 25px;
 		}
 
 		.mainDiv {
 			background-color: white;
-			text-align : center;
 			width: 70%;
 			height: 500px;
 			margin-left: 15%;
@@ -24,8 +27,11 @@
 			box-shadow: 2px 2px 0 0 grey;
 		}
 
-		form {
-			background-color: red;
+		input {
+			position:relative;
+			top: 400px;
+			left: 45%;
+			width: 10%;
 		}
 	</style>
 </head>
