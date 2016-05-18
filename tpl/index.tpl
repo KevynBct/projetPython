@@ -47,11 +47,14 @@
                     <td>
                         <select id="activite" name="activite">
 <<<<<<< HEAD
+<<<<<<< HEAD
                          
                            <option value=""></option>
 =======
                             <option value=""></option>
 >>>>>>> 1e0edc1fdefee3c02966265610c0156157724397
+=======
+>>>>>>> 79807ac50d61cc49655f20bccceb0c3d862e7bda
                             % for nom in activite:
                                 <option value="{{nom[0]}}">{{nom[0]}}
                             %end 
