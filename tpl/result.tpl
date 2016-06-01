@@ -13,9 +13,8 @@
 		}
 
 		.mainDiv {
-            background-color: white;
+            background-color: #A8DA3C;
             width: 70%;
-            height: 400px;
             margin-left: 15%;
             margin-top: 80px;
             min-height: 20%;
@@ -44,7 +43,10 @@
         		<td><a href="/map/{{row[4]}}/{{row[5]}}">Map</a></td>
         	</tr>
         	%end
-        </table>
+       </table>
+
+
 </div>
+<input type="button" value="Retour" onclick="history.go(-1)">
 </body>
 </html>

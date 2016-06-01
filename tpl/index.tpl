@@ -6,7 +6,7 @@
         body 
         {
             font-family : Helvetica;
-            background-color : #D3FEE4;
+            background: url("/static/photo1.jpg"); 
         }
 
         h1 
