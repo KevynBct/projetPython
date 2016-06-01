@@ -39,8 +39,8 @@
             margin-left: 5%;
             height: 34px;
             overflow: hidden;
-            background: url(/static/arrow.png) no-repeat right rgba(150, 150, 150, 0.9);
-            color: rgba(230, 230, 230, 1);
+            background: url(/static/arrow.png) no-repeat right rgba(230, 230, 230, 0.9);
+            color: rgba(100, 100, 100, 1);
             border: 1px solid #ccc;
             border-radius: 5px;
         }
@@ -64,8 +64,8 @@
         }
         input 
         {
-            background: rgba(100, 100, 100, 0.9);
-            color: rgba(230, 230, 230, 1);
+            background: rgba(230, 230, 230, 0.9);
+            color: rgba(100, 100, 100, 1);
             display: block;
             width: 10%;
             margin-left: 45%;
