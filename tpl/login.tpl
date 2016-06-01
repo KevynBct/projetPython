@@ -20,7 +20,8 @@
 
 		.mainDiv {
 			font-family: sans-serif ; 
-			background-color: rgba(255, 255, 255, 0.2);;
+			background-color: rgba(255, 255, 255, 0);
+			color: rgba(220, 220, 220, 1); ; 
 			width: 70%;
 			height: 400px;
 			margin-top: 80px;
@@ -42,7 +43,7 @@
     	<h1> Lebonsport </h1>
     	<h3>Il n'y a besoin d'être au top pour commencer. Mais il faut commencer pour être au top </h3>
 	    <form action="" method="post">
-	        <input value="Commencer" type="submit">
+	        <input value="Entrer" type="submit">
 	    </form>
     </div>
 </body>
