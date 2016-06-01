@@ -8,6 +8,18 @@
 			background: url("/static/photo1.jpg"); 
             background-repeat:no-repeat;
             background-position:center center;  		}
+			
+        h1
+        {
+        	font-size: 500%;
+        	color: white; 
+        }    
+
+        h3
+        {
+			color: rgba(240, 240, 240, 1);
+        }
+
 		h1,h3 {
 			position:relative;
 			top:20px;
@@ -20,8 +32,7 @@
 
 		.mainDiv {
 			font-family: sans-serif ; 
-			background-color: rgba(255, 255, 255, 0);
-			color: rgba(220, 220, 220, 1); ; 
+			/*background-color: rgba(255, 255, 255, 0);*/
 			width: 70%;
 			height: 400px;
 			margin-top: 80px;
