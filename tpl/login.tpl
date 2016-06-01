@@ -4,20 +4,22 @@
 	<title></title>
 	<style type="text/css">
 		body {
-			font-family : Helvetica;
-			background-color : #D3FEE4;
-		}
-		h1 {
+			font-family : sans-serif ;
+			background: url("/static/photo1.jpg"); 
+            background-repeat:no-repeat;
+            background-position:center center;  		}
+		h1,h3 {
 			position:relative;
 			top:20px;
 			left: 25%;
 			width: 50%;
 			text-align: center;
-			font-family: Impact;
+			font-family: sans-serif;
 		}
 
 		.mainDiv {
-			background-color: white;
+			font-family: sans-serif ; 
+			background-color: rgba(255, 255, 255, 0.5);;
 			width: 70%;
 			height: 400px;
 			margin-left: 15%;
@@ -37,7 +39,8 @@
 </head>
 <body>
     <div class='mainDiv'>
-    	<h1> Bienvenue </h1>
+    	<h1> Lebonsport </h1>
+    	<h3>Il n'y a besoin d'être au top pour commencer. Mais il faut commencer pour être au top </h3>
 	    <form action="" method="post">
 	        <input value="Commencer" type="submit">
 	    </form>
