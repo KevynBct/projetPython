@@ -39,8 +39,8 @@
         		<td>{{row[3]}}</td>
         		<td>{{row[0]}}</td>
         		<td>{{row[2]}}</td>
-        		<td>{{row[1]}}</td>
-        		<td><a href="/map/{{row[4]}}/{{row[5]}}">Map</a></td>
+                <td>{{row[1]}}</td>
+                <td><a href="/map/{{row[5]}}/{{row[4]}}">Map</a></td>
         	</tr>
         	%end
        </table>
