@@ -11,9 +11,12 @@
 			var map = new GMaps({
 			    div: '#map',
 			    lat: {{lat}},
-			    lng: -0.1276831
+			    lng: {{long}}
 		  	});
-
+			map.addMarker({
+			  lat: {{lat}},
+			  lng: {{long}}
+			});
 
 		}
 	</script>
@@ -55,7 +58,7 @@
 <body onload="init()">
 <div class='mainDiv'>
 	<h1>Ceci est la page de map</h1>
-	<p>lat =  et long = {{long}}
+	<p>lat = {{lat}} et long = {{long}}
 
 	<div id="map"></div>
 
