@@ -57,7 +57,6 @@
 </head>
 <body onload="init()">
 <div class='mainDiv'>
-	<h1>{{equipement}}</h1>
 	<div id="map"></div>
 </div>
 </body>
