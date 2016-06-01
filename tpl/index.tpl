@@ -8,10 +8,8 @@
         body 
         {
             font-family : Helvetica;
-            background: url("/static/photo1.jpg"); 
-            background-repeat:no-repeat;
-            background-position:center center;  
-
+            background: url("/static/curry.jpg"); 
+            background-size: 100%;
         }
 
         h1 
@@ -44,7 +42,7 @@
 
         .mainDiv
         {
-            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.2);
             width: 70%;
             height: 400px;
             margin-left: 15%;
