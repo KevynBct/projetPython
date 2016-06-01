@@ -15,23 +15,23 @@
 			width: 50%;
 			text-align: center;
 			font-family: sans-serif;
+			font-
 		}
 
 		.mainDiv {
 			font-family: sans-serif ; 
-			background-color: rgba(255, 255, 255, 0.5);;
+			background-color: rgba(255, 255, 255, 0.2);;
 			width: 70%;
 			height: 400px;
-			margin-left: 15%;
 			margin-top: 80px;
+			margin-left: 15%; 
 			min-height: 20%;
-			border-radius: 5px;
-			box-shadow: 2px 2px 0 0 grey;
+			border-radius: 10px ; 
 		}
 
 		input {
 			position:relative;
-			top: 300px;
+			top: 125px;
 			left: 45%;
 			width: 10%;
 		}
