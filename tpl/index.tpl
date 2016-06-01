@@ -9,6 +9,7 @@
         {
             font-family : Helvetica;
             background: url("/static/curry.jpg"); 
+            background-repeat:no-repeat;
             background-size: 100%;
         }
 
@@ -20,19 +21,28 @@
             width: 50%;
             text-align: center;
             font-family: Impact;
+            font-size: 250%;
+            color: rgba(230, 230, 230, 1);
         }
 
         table 
         {
             width : 70%;
             margin-left : 15%;
+            margin-top: 15%;
+            display: block;
         }
 
         select 
         {
-            position:relative;
-            top: 100px;
-            width : 100%;
+            width: 90%;
+            margin-left: 5%;
+            height: 34px;
+            overflow: hidden;
+            background: url(/static/arrow.png) no-repeat right rgba(150, 150, 150, 0.9);
+            color: rgba(230, 230, 230, 1);
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         td 
@@ -52,13 +62,15 @@
             box-shadow: 2px 2px 0 0 grey;
 
         }
-
         input 
         {
-            position:relative;
-            top: 260px;
-            left: 45%;
+            background: rgba(100, 100, 100, 0.9);
+            color: rgba(230, 230, 230, 1);
+            display: block;
             width: 10%;
+            margin-left: 45%;
+            margin-top: 10%;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -86,7 +98,6 @@
                     </td>
                 </tr>
             </table>
-            </br>
             <input value="Valider" type="submit">
         </form>
     </div>
