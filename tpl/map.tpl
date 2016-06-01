@@ -57,12 +57,8 @@
 </head>
 <body onload="init()">
 <div class='mainDiv'>
-	<h1>Ceci est la page de map</h1>
-	<p>lat = {{lat}} et long = {{long}}
-
+	<h1>{{equipement}}</h1>
 	<div id="map"></div>
-
-
 </div>
 </body>
 </html>

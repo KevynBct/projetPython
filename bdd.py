@@ -12,7 +12,6 @@ cursor = conn.cursor()
 cursor.execute("DROP table installation")
 cursor.execute("DROP table activite")
 cursor.execute("DROP table equipement")
-cursor.execute("DROP table equipement_activite")
 
 #Creation des tables
     
@@ -24,9 +23,7 @@ CREATE TABLE IF NOT EXISTS installation
     nom VARCHAR, 
     numero INTEGER,
     adresse VARCHAR,
-    ville VARCHAR,
-    lat VARCHAR,
-    long VARCHAR
+    ville VARCHAR
 )
 """)
 conn.commit()
@@ -37,7 +34,9 @@ cursor.execute("""
 CREATE TABLE IF NOT EXISTS equipement(
      numero_equipement INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
      nom VARCHAR,
-     numero_installation INTEGER
+     numero_installation INTEGER, 
+     lat VARCHAR,
+     long VARCHAR
 )
 """)
 conn.commit()
@@ -79,7 +78,7 @@ with open('csv/equipements.csv', 'r') as equip:
             first = False
             continue
         else:
-            cursor.execute("INSERT INTO equipement(numero_equipement, nom, numero_installation) VALUES (?, ?, ?)", (row[4],row[5],row[2]))
+            cursor.execute("INSERT INTO equipement(numero_equipement, nom, numero_installation, lat, long) VALUES (?, ?, ?, ?, ?)", (row[4],row[5],row[2], row[180],row[181]))
 conn.commit()
 
 
@@ -94,7 +93,7 @@ with open('csv/installations.csv', 'r') as instal:
             first = False
             continue
         else:
-            cursor.execute("INSERT INTO installation(numero_instal, nom, adresse, ville, lat, long) VALUES (?, ?, ?, ?, ?, ?)", (row[1],row[0],row[7],row[2],row[9], row[10]))
+            cursor.execute("INSERT INTO installation(numero_instal, nom, adresse, ville) VALUES (?, ?, ?, ?)", (row[1],row[0],row[7],row[2]))
 conn.commit()
 
 #Insertion data from activite.csv

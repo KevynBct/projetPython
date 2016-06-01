@@ -1,7 +1,9 @@
+<!-- Page de recherche et page principale du site -->
 <!DOCTYPE html>
 <html>
 <head>
     <title></title>
+    <!-- CSS de cette page -->
     <style type="text/css">
         body 
         {
