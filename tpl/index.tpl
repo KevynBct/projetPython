@@ -7,6 +7,9 @@
         {
             font-family : Helvetica;
             background: url("/static/photo1.jpg"); 
+            background-repeat:no-repeat;
+            background-position:center center;  
+
         }
 
         h1 
@@ -39,7 +42,7 @@
 
         .mainDiv
         {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.5);
             width: 70%;
             height: 400px;
             margin-left: 15%;
@@ -47,6 +50,7 @@
             min-height: 20%;
             border-radius: 5px;
             box-shadow: 2px 2px 0 0 grey;
+
         }
 
         input 
