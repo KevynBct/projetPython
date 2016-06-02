@@ -23,6 +23,7 @@
             font-family: Impact;
             font-size: 250%;
             color: rgba(230, 230, 230, 1);
+            text-shadow: 0 2px 0 #222222;
         }
 
         table 

@@ -3,47 +3,34 @@
 <head>
 	<title></title>
 	<style type="text/css">
+		@font-face {
+		    font-family: "Ma Super Fonte";
+		    font-style: italic;
+		    src: url('/static/earthorbiter.ttf');
+		}
 		body 
 		{
-			font-family : sans-serif ;
-			background: url("/static/photo1.jpg"); 
+			background: url("/static/stade.jpg"); 
             background-repeat:no-repeat;
-<<<<<<< HEAD
-            background-position:center center;  		}
-			
-        h1
-        {
-        	font-size: 500%;
-        	color: white; 
-        }    
-
-        h3
-        {
-			color: rgba(240, 240, 240, 1);
-        }
-
-		h1,h3 {
-=======
-            background-position:center center;  
+            background-position: center;
         }
 
 		h1 
 		{
->>>>>>> d916f11db0f23ca73d4def723f61603db5cbf4ca
-			position:relative;
-			top:20px;
-			left: 25%;
-			width: 50%;
+			font-size: 300%;
+        	color: white; 
 			text-align: center;
-			font-family: sans-serif;
+			font-family:"Ma Super Fonte";
+			text-shadow: 0 2px 0 #222222;
 		}
 
 		h3
 		{
 			margin-top: 15%;
+			font-size: 90%;
 			text-align: center;
-			font-family: sans-serif;
-			font-color : ;
+			font-family: Helvetica;
+			color: rgba(240, 240, 240, 1);
 		}
 
 		.mainDiv 
@@ -73,7 +60,7 @@
 <body>
     <div class='mainDiv'>
     	<h1> Lebonsport </h1>
-    	<h3>Il n'y a besoin d'être au top pour commencer. Mais il faut commencer pour être au top </h3>
+    	<h3>Il n'y a besoin d'être au top pour commencer. Mais il faut commencer pour être au top.</h3>
 	    <form action="" method="post">
 	        <input value="Entrer" type="submit">
 	    </form>
