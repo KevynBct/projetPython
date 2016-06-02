@@ -10,9 +10,12 @@
 		}
 		body 
 		{
-			background: url("/static/stade.jpg"); 
+			background: url("/static/photo1.jpg"); 
             background-repeat:no-repeat;
-            background-position: center;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
         }
 
 		h1 
