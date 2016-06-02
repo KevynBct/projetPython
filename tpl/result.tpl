@@ -3,11 +3,22 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		body 
+	/*	body 
         {
 			font-family : Helvetica;
 			background-color : #D3FEE4;
-		}
+		}*/
+
+        body 
+        {
+            font-family : Helvetica;
+            background: url("/static/boxe.jpg");
+            background-attachment: fixed; 
+            background-repeat:no-repeat;
+            background-size: 100%;
+
+        }
+
 
 		h1 
         {
@@ -15,7 +26,8 @@
 		}
 
 		.mainDiv {
-            background-color: white;
+            
+            background-color: rgba(240, 240, 240, 0.5);
             width: 70%;
             margin-left: 15%;
             margin-top: 80px;
@@ -25,6 +37,9 @@
             padding-top: 0.5px; 
 		}
 
+a.top {
+   position:fixed;
+}
 
         
 
@@ -37,7 +52,6 @@ table, th, td
 {
     width: 90%; 
     margin-left: 5%; 
-    
     height: 10px;
     margin-top: 5%; 
     border: 1px solid black;
@@ -50,13 +64,28 @@ table, th, td
     font-weight: bold ; 
 }
 
+.backtotop
+{
+    position:fixed;
+    height:10px;
+    width:50px; 
+    bottom:300px;
+    right:0px;
+    border-radius:4px 0 0 4px;
+    line-height:48px; 
+    border-radius: 15px;
+}
+
+
 </style>
 
 
 </head>
 <body>
 <div class='mainDiv'>
-	
+
+<a href="#" class="backtotop"><img src="/static/backtotop.png"></a>
+
         <table>
         	<tr>
         		<td class="colonne">Sport</td>
