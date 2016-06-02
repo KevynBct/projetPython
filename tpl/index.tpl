@@ -3,6 +3,7 @@
 <html>
 <head>
     <title></title>
+    
     <!-- CSS de cette page -->
     <style type="text/css">
         body 
@@ -10,7 +11,10 @@
             font-family : Helvetica;
             background: url("/static/curry.jpg"); 
             background-repeat:no-repeat;
-            background-size: 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
 
         h1 
@@ -55,9 +59,9 @@
         {
             background-color: rgba(255, 255, 255, 0.2);
             width: 70%;
-            height: 400px;
+            height: 60%;
             margin-left: 15%;
-            margin-top: 80px;
+            margin-top: 10%;
             min-height: 20%;
             border-radius: 5px;
             box-shadow: 2px 2px 0 0 grey;
@@ -70,7 +74,8 @@
             display: block;
             width: 10%;
             margin-left: 45%;
-            margin-top: 10%;
+            margin-bottom: 5%;
+            margin-top: 5%;
             border-radius: 4px;
         }
     </style>

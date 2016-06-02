@@ -15,7 +15,8 @@
 		  	});
 			map.addMarker({
 			  lat: {{lat}},
-			  lng: {{long}}
+			  lng: {{long}},
+			  icon: "/static/flag.jpg"
 			});
 
 		}
@@ -27,10 +28,11 @@
         {
             font-family : Helvetica;
             background: url("/static/tennis2.jpg");
-            background-attachment: fixed; 
             background-repeat:no-repeat;
-            background-size: 100%;
-            backgroun
+            -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
 
         }
 
