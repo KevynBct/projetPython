@@ -23,6 +23,7 @@
             font-family: Impact;
             font-size: 250%;
             color: rgba(230, 230, 230, 1);
+            text-shadow: 0 2px 0 #222222;
         }
 
         table 
@@ -74,6 +75,9 @@
         }
     </style>
 </head>
+
+
+<!-- Search menu -->
 <body>
     <div class='mainDiv'>
         <h1> Effectuez votre recherche </h1>
@@ -81,6 +85,7 @@
             <table>
                 <tr>
                     <td>
+                        <!-- Activity -->
                         <select id="activite" name="activite">
                             <option value="">Choisissez une activité</option>
                             % for nom in activite:
@@ -89,6 +94,7 @@
                         </select>
                     </td>
                     <td>
+                        <!-- Location -->
                         <select id="installation" name="installation">
                             <option value="">Choisissez un lieu</option>
                             % for nom in installation:

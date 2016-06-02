@@ -41,18 +41,6 @@ CREATE TABLE IF NOT EXISTS equipement(
 """)
 conn.commit()
 
-# #Table equipement_activite
-# #cursor = conn.cursor()
-# cursor.execute("""
-# CREATE TABLE IF NOT EXISTS equipement_activite(
-#      numero_equipement,
-#      numero_activite, 
-#      FOREIGN KEY(numero_equipement) REFERENCES equipement(numero_equipement),
-#      FOREIGN KEY(numero_activite) REFERENCES activite(numero_activite)
-# )
-# """)
-# conn.commit()
-
 #Table activite
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS activite(
@@ -100,7 +88,7 @@ conn.commit()
 with open('csv/activites.csv', 'r') as act:
     reader = csv.reader(act)
 
-    #Flag pour eviter la lecture de la premiere ligne 
+    #Flag to avoid the first line
     first = True
     for row in reader:
         if first:
@@ -110,6 +98,6 @@ with open('csv/activites.csv', 'r') as act:
             cursor.execute("INSERT INTO activite(numero_activite, nom, numero_equipement) VALUES (?, ?, ?)", (row[4], row[5], row[2]))
 conn.commit()
 
-#Fermeture BDD
+#Close DataBase
 conn.close()
 
