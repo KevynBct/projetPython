@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+# This class tests data insertion. 
+
 import sqlite3
 
-#Connexion BDD
+#DB Connection
 conn = sqlite3.connect('base.db')
 
-#Creation des tables
 	
-#Table installation
+#Print table activite
 cursor = conn.cursor()
 for row in cursor.execute("""
 	select * from activite

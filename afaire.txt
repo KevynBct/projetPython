@@ -1,8 +1,0 @@
-
------------------------------------------ À FAIRE -------------------------------------------------------
-
-	1) Vérifier les noms des colonnes
-	2) Faire les requêtes
-	3) Faire un site bg
-
-	Bonus) Faire la map

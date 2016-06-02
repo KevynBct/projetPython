@@ -57,7 +57,12 @@
 		}
 	</style>
 </head>
+
+
+
 <body>
+    
+	<!-- Main menu --> 
     <div class='mainDiv'>
     	<h1> Lebonsport </h1>
     	<h3>Il n'y a besoin d'être au top pour commencer. Mais il faut commencer pour être au top.</h3>
