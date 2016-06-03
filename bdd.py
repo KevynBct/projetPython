@@ -7,13 +7,13 @@ import csv
 #Connexion BDD
 conn = sqlite3.connect('base.db')
 
-# On vide la table 
+# Allows to clear the database
 cursor = conn.cursor()
 cursor.execute("DROP table installation")
 cursor.execute("DROP table activite")
 cursor.execute("DROP table equipement")
 
-#Creation des tables
+#Creation of tables
     
 #Table installation
 cursor.execute("""
