@@ -78,10 +78,12 @@
             display: block;
             width: 10%;
             margin-left: 45%;
-            margin-bottom: 55%;
+            margin-bottom: 5%;
             margin-top: 5%;
             border-radius: 4px;
         }
+
+
     </style>
 </head>
 
@@ -113,7 +115,8 @@
                     </td>
                 </tr>
             </table>
-            <input value="Valider" type="submit">
+                <input value="Valider" type="submit">
+            </br>
         </form>
     </div>
 </body>

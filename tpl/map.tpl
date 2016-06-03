@@ -15,8 +15,7 @@
 		  	});
 			map.addMarker({
 			  lat: {{lat}},
-			  lng: {{long}},
-			  icon: "/static/flag.jpg"
+			  lng: {{long}}
 			});
 
 		}
