@@ -4,18 +4,15 @@
 	<title></title>
 	<style type="text/css">
 		@font-face {
-		    font-family: "Ma Super Fonte";
+		    font-family: "EarthOrbiter";
 		    font-style: italic;
 		    src: url('/static/earthorbiter.ttf');
 		}
 		body 
 		{
-			background: url("/static/photo1.jpg"); 
-            background-repeat:no-repeat;
-		    -webkit-background-size: cover;
-		    -moz-background-size: cover;
-		    -o-background-size: cover;
-		    background-size: cover;
+			background: url("/static/photo1.jpg") no-repeat center fixed; 
+            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+            background-size: cover; /* version standardisée */
         }
 
 		h1 
@@ -23,7 +20,7 @@
 			font-size: 300%;
         	color: white; 
 			text-align: center;
-			font-family:"Ma Super Fonte";
+			font-family:"EarthOrbiter";
 			text-shadow: 0 2px 0 #222222;
 		}
 

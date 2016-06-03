@@ -17,12 +17,8 @@
         body 
         {
             font-family : Helvetica;
-            background: url("/static/boxe.jpg");
-            background-attachment: fixed; 
-            background-repeat:no-repeat;
+            background: url("/static/boxe.jpg")no-repeat center fixed; 
             -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
             background-size: cover;
 
         }
@@ -45,12 +41,12 @@
             padding-top: 0.5px; 
 		}
 
-        a.top {
+/*        a.top {
            position:fixed;
-        }
+        }*/
 
 
-        .backtotop
+/*        .backtotop
         {
             position:fixed;
             height:10px;
@@ -60,7 +56,7 @@
             border-radius:4px 0 0 4px;
             line-height:48px; 
             border-radius: 15px;
-        }
+        }*/
 
 
 </style>
@@ -70,7 +66,7 @@
 <body onload="init()">
 <div class='mainDiv'>
 
-<a href="#" class="backtotop"><img src="/static/backtotop.png"></a>
+<!-- <a href="#" class="backtotop"><img src="/static/backtotop.png"></a> -->
 
         <table id="table">
             <thead>
@@ -90,7 +86,8 @@
                     <td style="text-align:center">{{row[0]}}</td>
                     <td style="text-align: center">{{row[2]}}</td>
                     <td>{{row[1]}}</td>
-                    <td><a href="/map/{{row[5]}}/{{row[4]}}"><img src="/static/marker1.png"></a></td>
+                    <td><a href="/map/{{row[5]}}/{{row[4]}}">
+                    <img src="/static/marker1.png"></a></td>
                 </tr>
                 %end
             </tbody>

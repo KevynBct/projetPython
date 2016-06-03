@@ -27,13 +27,9 @@
  		body 
         {
             font-family : Helvetica;
-            background: url("/static/tennis2.jpg");
-            background-repeat:no-repeat;
+            background: url("/static/tennis2.jpg")no-repeat center fixed; 
             -webkit-background-size: cover;
-		    -moz-background-size: cover;
-		    -o-background-size: cover;
-		    background-size: cover;
-
+            background-size: cover;
         }
 
 

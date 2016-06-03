@@ -6,14 +6,18 @@
     
     <!-- CSS de cette page -->
     <style type="text/css">
+
+        @font-face {
+            font-family: "EarthOrbiter";
+            font-style: italic;
+            src: url('/static/earthorbiter.ttf');
+        }
+
         body 
         {
             font-family : Helvetica;
-            background: url("/static/curry.jpg"); 
-            background-repeat:no-repeat;
+            background: url("/static/curry.jpg") no-repeat center fixed; 
             -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
             background-size: cover;
         }
 
@@ -24,8 +28,8 @@
             left: 25%;
             width: 50%;
             text-align: center;
-            font-family: Impact;
-            font-size: 250%;
+            font-family: "EarthOrbiter";
+            font-size: 200%;
             color: rgba(230, 230, 230, 1);
             text-shadow: 0 2px 0 #222222;
         }
@@ -74,7 +78,7 @@
             display: block;
             width: 10%;
             margin-left: 45%;
-            margin-bottom: 5%;
+            margin-bottom: 55%;
             margin-top: 5%;
             border-radius: 4px;
         }
