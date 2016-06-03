@@ -4,7 +4,7 @@
 <head>
     <title></title>
     
-    <!-- CSS de cette page -->
+    <!-- CSS of this page-->
     <style type="text/css">
 
         @font-face {
@@ -68,7 +68,6 @@
             margin-top: 10%;
             min-height: 20%;
             border-radius: 5px;
-            box-shadow: 2px 2px 0 0 grey;
 
         }
         input 
