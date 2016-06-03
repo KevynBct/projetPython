@@ -1,7 +1,10 @@
+<!-- Map page -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Localisation</title>
+
+	<!-- Import javascript  -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script src="/static/gmaps.js"></script>
@@ -18,34 +21,28 @@
 			  lng: {{long}},
 			  icon: "/static/marker.png"
 			});
-
 		}
 	</script>
+
+	<!-- CSS if this page-->
 	<style type="text/css">
 		
-
  		body 
         {
             font-family : Helvetica;
-            background: url("/static/tennis2.jpg")no-repeat center fixed; 
+            background: url("/static/golf.jpg")no-repeat center fixed; 
             -webkit-background-size: cover;
             background-size: cover;
         }
-
-
 
 		h1 
 		{
 			font-family: Impact;
 		}
 
-
 		#map
 		{
-			
-			/*margin-top: 200px; */
 			margin-left: 2px; 
-
 			background-color: rgba(240, 240, 240, 0.5);
 			text-align : center;
 			width: 70%;

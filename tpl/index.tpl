@@ -1,8 +1,8 @@
-<!-- Page de recherche et page principale du site -->
+<!-- Main page and search page -->
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Lebonsport</title>
     
     <!-- CSS of this page-->
     <style type="text/css">

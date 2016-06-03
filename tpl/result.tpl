@@ -1,12 +1,9 @@
+<!-- Result page -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Resultat</title>
     
-    
-    
-    
-
     <!-- Function and path for printing results in a datable -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script type="text/javascript" src="/static/jquery.dataTables.min.js"></script>
@@ -23,12 +20,10 @@
         body 
         {
             font-family : Helvetica;
-            background: url("/static/boxe.jpg")no-repeat center fixed; 
+            background: url("/static/athletisme.jpg")no-repeat center fixed; 
             -webkit-background-size: cover;
             background-size: cover;
-
         }
-
 
 		h1 
         {
@@ -47,27 +42,9 @@
             padding-top: 0.5px; 
 		}
 
-/*        a.top {
-           position:fixed;
-        }*/
-
-
-/*        .backtotop
-        {
-            position:fixed;
-            height:10px;
-            width:50px; 
-            bottom:300px;
-            right:0px;
-            border-radius:4px 0 0 4px;
-            line-height:48px; 
-            border-radius: 15px;
-        }*/
-
-
 </style>
 
-
+<!-- Content -->
 </head>
 <body onload="init()">
     <div class='mainDiv'>

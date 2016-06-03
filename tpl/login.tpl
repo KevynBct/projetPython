@@ -1,7 +1,8 @@
+<!-- Home page -->
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Rechercher un sport</title>
 
 		<!-- CSS  -->
 		<style type="text/css">
@@ -12,7 +13,7 @@
 			}
 			body 
 			{
-				background: url("/static/photo1.jpg") no-repeat center fixed; 
+				background: url("/static/accueil.jpg") no-repeat center fixed; 
 	            -webkit-background-size: cover; /* pour anciens Chrome et Safari */
 	            background-size: cover; /* version standardisée */
 	        }

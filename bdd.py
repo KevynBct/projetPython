@@ -53,8 +53,6 @@ CREATE TABLE IF NOT EXISTS activite(
 """)
 conn.commit()
 
-
-
 #Insertion data from equipement.csv
 with open('csv/equipements.csv', 'r') as equip:
     reader = csv.reader(equip)
