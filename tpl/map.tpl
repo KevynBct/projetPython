@@ -15,7 +15,8 @@
 		  	});
 			map.addMarker({
 			  lat: {{lat}},
-			  lng: {{long}}
+			  lng: {{long}},
+			  icon: "/static/marker.png"
 			});
 
 		}
@@ -63,7 +64,8 @@
 
 </head>
 <body onload="init()">
-
+	
+	<!-- Location of the map -->
 	<div id="map"></div>
 
 </body>

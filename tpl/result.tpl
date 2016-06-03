@@ -2,16 +2,22 @@
 <html>
 <head>
 	<title></title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/jquery.dataTables.min.css"/>
-    <script type="text/javascript" src="/static/jquery.dataTables.min.js"></script>
+    
+    
+    
+    
 
+    <!-- Function and path for printing results in a datable -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/jquery.dataTables.min.js"></script>
     <script type="text/javascript">
         function init() {
             $('#table').DataTable();
         }
     </script>
+    <link rel="stylesheet" type="text/css" href="/static/jquery.dataTables.min.css"/>
 
+    <!-- CSS of this page -->
 	<style type="text/css">
 
         body 
@@ -64,13 +70,11 @@
 
 </head>
 <body onload="init()">
-<div class='mainDiv'>
-
-<!-- <a href="#" class="backtotop"><img src="/static/backtotop.png"></a> -->
-
+    <div class='mainDiv'>
         <table id="table">
             <thead>
                 <tr>
+                    <!-- header> -->
                     <td class="colonne">Sport</td>
                     <td class="colonne">Adresse</td>
                     <td class="colonne">Equipement</td>
@@ -82,6 +86,7 @@
                 
                 % for row in resultat:
                 <tr>
+                    <!-- Result obtained from request  -->
                     <td style="text-indent: 10px">{{row[3]}}</td>
                     <td style="text-align:center">{{row[0]}}</td>
                     <td style="text-align: center">{{row[2]}}</td>
@@ -92,8 +97,6 @@
                 %end
             </tbody>
        </table>
-
-
-</div>
+    </div>
 </body>
 </html>
